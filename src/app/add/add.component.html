@@ -1,0 +1,41 @@
+ <div class="container">
+    <form (ngSubmit)="add()">
+        <div class="row">
+            <fieldset class="col-md-8 offset-2">
+                <div class="form-group">
+                    <legend>Personal Info</legend>
+                    <label class="col-md-3-form-label">Employee Name: </label>&nbsp;{{name}}
+                    <input class="form-control" style="width: 50%" type="text" name="name" placeholder="Enter name" [(ngModel)]="name">
+                </div>
+                <div class="form-group form-inline">
+                    <label class="col-md-3-form-label">Date of Birth: </label>&nbsp;&nbsp;
+                    <input class="form-control" type="date" name="dob" placeholder="Date of Birth" [(ngModel)]="dob">
+                    <label class="col-md-3-form-label" style="margin-left: 15px">Phone #: </label>&nbsp;&nbsp;
+                    <input class="form-control" type="text" name="phone" placeholder="Enter #" [(ngModel)]="phone">
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3-form-label">Home Address: </label>&nbsp;&nbsp;
+                    <textarea class="form-control" style="width: 50%" type="text" name="addr" placeholder="Enter Address" [(ngModel)]="addr"></textarea>
+                </div><hr>
+                <div class="form-group form-inline">
+                        <legend>Educational Info</legend>
+                        <label class="col-md-3-form-label">Degree: </label>&nbsp;&nbsp;
+                        <input class="form-control" type="text" name="degree" placeholder="Enter highest degree" [(ngModel)]="degree">&nbsp;&nbsp;
+                        <label class="col-md-3-form-label">Enter Marks: </label>&nbsp;&nbsp;
+                        <input class="form-control" type="number" name="marks" placeholder="Enter marks" [(ngModel)]="marks">
+                    </div>
+                    <div class="form-group form-inline">
+                        
+                        <label class="col-md-3-form-label" >Enter Stream: </label>&nbsp;&nbsp;
+                        <input class="form-control" type="text" name="stream" placeholder="Enter Stream" [(ngModel)]="stream">
+                    </div>
+                    <div class="form-group">
+                            <label class="col-md-3-form-label" >Enter College: </label>&nbsp;&nbsp;
+                            <input class="form-control" style="width: 50%" type="text" name="college" placeholder="College Name" [(ngModel)]="college">
+                    </div>
+                <button type="submit" class="btn btn-primary">Add Info</button>
+            </fieldset>
+        </div>
+    </form>
+</div>
+ 

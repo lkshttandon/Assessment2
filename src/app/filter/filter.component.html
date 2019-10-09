@@ -1,0 +1,30 @@
+<div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                    <a class="btn btn-primary" routerLink="../" style="color:white;margin:10px">Go Back</a>
+    </div></div>
+    
+            <table class="table table-striped table-hover">
+                <thead class="thead thead-success">
+                    <th>Emp#</th>
+                    <th>Name</th>
+                    <th>Date of Birth<br>(yyyy-mm-dd)</th>
+                    <th>Phone #</th>
+                    <th>Address</th>
+                    <th>Update/Remove</th>
+                </thead>
+                <tbody *ngFor="let arr of array, let i = index">
+                    <td>{{arr.id + 1}}</td>
+                    <td>{{arr.name}}</td>
+                    <td>{{arr.dob}}</td>
+                    <td>{{arr.phone}}</td>
+                    <td>{{arr.addr}}</td>
+                    <td><a routerLink="edit/{{arr.id}}" class="btn btn-primary">Update</a>&nbsp;
+                        <a class="btn btn-danger" (click)="remv(i)">Remove</a>&nbsp;
+                        <a class="btn btn-success" routerLink="details/{{arr.id}}">More Info</a></td>
+                </tbody>
+            </table>
+    
+    
+            
+    </div>

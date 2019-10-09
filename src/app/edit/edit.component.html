@@ -1,0 +1,41 @@
+<div class="container">
+        <form (ngSubmit)="editInfo()">
+        <fieldset class="col-md-8 offset-2">
+                <div class="form-group">
+                    <legend>Edit Info of {{emp.name}}</legend>
+                    <label class="col-md-3-form-label">Employee Name: </label>&nbsp;{{name}}
+                    <input class="form-control" style="width: 50%" type="text" name="name" placeholder="Enter name" [(ngModel)]="name">
+                </div>
+                <div class="form-group form-inline">
+                    <label class="col-md-3-form-label">Date of Birth: </label>&nbsp;&nbsp;
+                    <input class="form-control" type="date" name="dob" placeholder="Date of Birth" [(ngModel)]="dob">
+                    <label class="col-md-3-form-label" style="margin-left: 15px">Phone #: </label>&nbsp;&nbsp;
+                    <input class="form-control" type="text" name="phone" placeholder="Enter #" [(ngModel)]="phone">
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3-form-label">Home Address: </label>&nbsp;&nbsp;
+                    <textarea class="form-control" style="width: 50%" type="text" name="addr" placeholder="Enter Address" [(ngModel)]="addr"></textarea>
+                </div>
+                <button class="btn btn-primary" type="submit">Edit Info</button>
+            </fieldset></form>
+                
+    <!-- <form class="col-md-6" (ngSubmit)="editBook()">
+        <div class="form-group">
+            <h2>Edit {{book.name}}</h2>
+        </div>
+        <div class="form-group">
+            <label for="my-input">Title</label>
+            <input placeholder="Book title" class="form-control" type="text" name="title" [(ngModel)]="name">
+        </div>
+        <div class="form-group">
+            <label for="my-input">Author</label>
+            <input placeholder="Author name" class="form-control" type="text" name="author" [(ngModel)]="auna">
+        </div>
+        <div class="form-group">
+            <label for="my-input">Price</label>
+            <input placeholder="Cost of the book" class="form-control" type="text" name="price"
+                [(ngModel)]="price">
+        </div>
+        <button class="btn btn-primary" type="submit">Edit Book</button>
+    </form> -->
+</div>
